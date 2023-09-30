@@ -1,0 +1,13 @@
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#minInput, #maxInput {
+    width: 40px;
+    text-align: center;
+}
+
+.newGame {
+    display: none;
+}

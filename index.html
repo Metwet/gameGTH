@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="introduce">
+                <h1 class="game-title">Guess The Number</h1>
+            </div>
+            <div class="game">
+                <p class="rules">Компьютер загадывает число от <span id="minNum">1</span> до <span id="maxNum">100</span>, а ты попытайся его угадать.</p>
+                <form id="gameForm">
+                    <label for="gameInput">
+                        Введите число:
+                    </label>
+                    <input type="text" id="gameInput">
+                    <button type="submit">Угадать</button>
+                </form>
+                <p id="message"></p>
+                <p>Попыток: <span id="attempts">0</span></p>
+                <button id="resetButton">Начать заново</button>
+            </div>
+            <div class="newGame">
+                <h2>Выберите свой диапозон:</h2>
+                <form id="newGameForm">
+                    <label for="minInput">
+                        Минимальное число число:
+                    </label>
+                    <input type="number" id="minInput" value="1">
+                    <label for="maxInput">
+                        Максимальное число число:
+                    </label>
+                    <input type="number" id="maxInput" value="100">
+                    <p id="errorMessage"></p>
+                    <button type="submit">Начать</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
